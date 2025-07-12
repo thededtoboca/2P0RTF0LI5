@@ -85,7 +85,7 @@ nav a:hover::after {
   color: black;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: top;
   cursor: pointer;
   height: 200px;
   overflow: hidden;
@@ -116,12 +116,11 @@ nav a:hover::after {
 }
 
 .cards.collapsed .card:not(.expanded) {
-  height: 200px;
+  height: 100px;
   font-size: 12px;
   padding: 4px 10px;
   overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis;
   border-top: 1px solid black;
   border-bottom: none;
 }
