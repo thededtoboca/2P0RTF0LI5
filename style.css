@@ -1,0 +1,162 @@
+@font-face {
+  font-family: 'Pretendard';
+  src: url('assets/PretendardVariable.woff2') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  font-family: 'Pretendard', sans-serif;
+  height: 100%;
+  overflow-x: hidden;
+}
+.background img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.background_abt img {
+  position: absolute;
+  top: 20px;
+  left: 500px;
+  width: 100%;
+  z-index: -1;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  align-items: center;
+}
+.logo {
+  height: 50px;
+}
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+nav a:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 1px;
+  background: black;
+}
+
+.title {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.tag {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  max-width: 2000px;
+  margin: 40px auto;
+  width: 75%;
+  gap: 0;
+}
+
+.card {
+  border: 1px solid black;
+  width: 100%;
+  padding: 20px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  height: 200px;
+  overflow: hidden;
+  transition: height 0.4s ease;
+}
+
+.card .tag {
+  font-size: 14px;
+}
+.card.expanded {
+  height: auto !important;
+  overflow: visible;
+}
+
+.card-content {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.password-input {
+  background: white;
+  border: none;
+  padding: 4px 8px;
+  font-size: 16px;
+}
+.card:not(.expanded):hover {
+  height: 400px;
+}
+
+.cards.collapsed .card:not(.expanded) {
+  height: 200px;
+  font-size: 12px;
+  padding: 4px 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  border-top: 1px solid black;
+  border-bottom: none;
+}
+
+
+.red { background: #F4A7A3; }
+.orange { background: #F9A24B; }
+.yellow { background: #F9F871; }
+.green { background: #9BFA97; }
+.blue { background: #7A88F7; }
+.olive { background: #94A394; }
+.black {
+  background: black;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .cards {
+    width: 95%;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    height: auto;
+  }
+
+  .card:not(.expanded):hover {
+    height: auto;
+  }
+}

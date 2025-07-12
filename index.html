@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="background">
+    <img src="assets/backgroundbm.svg" alt="background"/>
+  </div>
+
+  <header>
+    <img src="assets/title.svg" alt="Portfolio Logo" class="logo"/>
+    <nav>
+     <a href="about.html">ABOUT ME</a>
+     <a href="history.html">MY HISTORY</a>
+    </nav>
+  </header>
+
+  <main class="cards">
+    <div class="card red" data-file="projects/project1.html">
+      <div class="title">{빨간}</div><div class="tag">Editorial</div>
+    </div>
+    <div class="card orange" data-file="projects/project2.html">
+      <div class="title">{사이}</div><div class="tag">Editorial/Graphic</div>
+    </div>
+    <div class="card yellow" data-file="projects/project3.html">
+      <div class="title">현대 유니콘스 reimagine</div><div class="tag">Branding/Graphic</div>
+    </div>
+    <div class="card green" data-file="projects/project4.html">
+      <div class="title">사라나지구 re-branding</div><div class="tag">Branding/UI/Packaging</div>
+    </div>
+    <div class="card blue" data-file="projects/project5.html">
+      <div class="title">서울 솔루션</div><div class="tag">Branding/UI</div>
+    </div>
+    <div class="card olive" data-file="projects/project6.html">
+      <div class="title">un-corked</div><div class="tag">Branding/UI/Packaging</div>
+    </div>
+    <div class="card black confidential">
+      <div class="title">confidential project</div>
+      <input type="password" placeholder="enter password" class="password-input"/>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

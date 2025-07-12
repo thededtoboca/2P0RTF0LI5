@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>About Me</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Pretendard', sans-serif;
+      background: white;
+      overflow-x: hidden;
+    }
+
+    .about-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      position: relative;
+      padding: 20px 20px;
+      z-index: 1;
+    }
+
+    .about-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      padding-top: 50px;
+    }
+
+    .about-header .text {
+      max-width: 60%;
+    }
+
+    .about-header h1 {
+      font-family: 'Pretendard', sans-serif;
+      font-size: 48px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .about-header p {
+      line-height: 1.6;
+      font-size: 16px;
+      text-align: justify;
+      font-weight: 400;
+    }
+
+    .about-korean {
+      margin-top: 40px;
+      max-width: 400px;
+      font-size: 16px;
+      line-height: 1.9;
+      text-align: justify;
+      font-weight: 300;
+    }
+
+    .halftone-bg {
+      position: absolute;
+      top: 0;
+      left: 500px;
+      width: 100%;
+      z-index: -1;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 40px;
+      align-items: center;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: black;
+      position: relative;
+    }
+
+    nav a:hover::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      width: 100%;
+      height: 1px;
+      background: black;
+    }
+
+    @media screen and (max-width: 768px) {
+      .about-header {
+        flex-direction: column;
+      }
+      .about-header .text {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="assets/title.svg" alt="Portfolio Logo" class="logo" height="40"/>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="history.html">MY HISTORY</a>
+    </nav>
+  </header>
+
+  <div class="about-container">
+    <div class="about-header">
+      <div class="text">
+        <h1>안녕하세요 이우성입니다!</h1>
+        <p>
+          I’m a visual designer with a focus on branding, editorial, and interactive design.
+          I’m interested in how design can respond to social and environmental contexts with clarity and care.
+          My work often plays with structure, rhythm, and subtle detail — from packaging that rethinks waste,
+          to interfaces that feel intuitive and expressive. This portfolio is a collection of experiments
+          and systems shaped by observation, research, and everyday life.
+        </p>
+      </div>
+      <img src="assets/backgroundbm.svg" alt="My halftone image" class="halftone-bg" />
+    </div>
+
+    <div class="about-korean">
+      <p>
+        브랜딩, 에디토리얼, 인터랙티브 디자인을 중심으로 작업하는 시각 디자이너로서 디자인이 사회적・환경적 맥락에
+        어떻게 섬세하게 반응할 수 있는지에 관심이 많습니다. <br><br>
+        구조와 리듬, 디테일을 탐구하며, 직관적이고 표현력 있는 결과물을 만듭니다. 이 포트폴리오는
+        일상과 관찰, 리서치를 통해 만들어낸 실험과 시스템들의 기록입니다.
+      </p>
+    </div>
+
+    <div class="about-header">
+      <div class-"text">
+        <h1> Skills</h1>
+        <p>Brand Identity Design </p>
+        <p>UI Design </p>
+        <p>Brand Bussiness Planning </p>
+        <p>Packaging Desing </p>
+        <p>Editorial Design </p>
+        <p>3D Modelling/Rendering</p>
+        <p>UX Research</p>  
+        <p>HTML Coding</p> 
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
