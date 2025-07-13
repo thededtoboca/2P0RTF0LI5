@@ -83,7 +83,6 @@ nav a:hover::after {
   width: 100%;
   padding: 20px;
   color: black;
-  display: flex;
   justify-content: space-between;
   align-items: top;
   cursor: pointer;
